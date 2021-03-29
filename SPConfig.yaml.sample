@@ -1,0 +1,13 @@
+SPConfigs:
+  Code:
+    ProtocolName: RDP
+    TimeOut: 1000
+    MultiAddress:
+      - 127.0.0.1:53391
+      - 192.168.50.188:3389
+  Server2019:
+    ProtocolName: RDP
+    TimeOut: 1000
+    MultiAddress:
+      - 127.0.0.1:53392
+      - 192.168.50.233:3389
