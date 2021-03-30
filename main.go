@@ -6,9 +6,25 @@ import (
 	gpd "github.com/allanpk716/go-protocol-detector"
 	"os"
 	"strings"
+	"syscall"
 	"time"
 )
 
+func Console(show bool) {
+	var getWin = syscall.NewLazyDLL("kernel32.dll").NewProc("GetConsoleWindow")
+	var showWin = syscall.NewLazyDLL("user32.dll").NewProc("ShowWindow")
+	hwnd, _, _ := getWin.Call()
+	if hwnd == 0 {
+		return
+	}
+	if show {
+		var SW_RESTORE uintptr = 9
+		showWin.Call(hwnd, SW_RESTORE)
+	} else {
+		var SW_HIDE uintptr = 0
+		showWin.Call(hwnd, SW_HIDE)
+	}
+}
 
 func main() {
 	/*
@@ -20,6 +36,9 @@ func main() {
 			return 1
 			error info
 	*/
+	// hide console window
+	Console(false)
+	defer Console(true)
 	// check and load args
 	if len(os.Args) != 3 {
 		fmt.Println("input arg error")
