@@ -13,7 +13,7 @@ func timeCost(start time.Time, addInfo *AddressInfo) {
 
 func checkOne(check func(host string, port string) error, sp *SmartProtocol) (string, error) {
 	//wg := &sync.WaitGroup{}
-	var ch = make(chan AddressInfo, len(sp.MultiAddressInfo))
+	var ch = make(chan AddressInfo)
 	defer close(ch)
 	for _, info := range sp.MultiAddressInfo {
 		tmpInfo := info
