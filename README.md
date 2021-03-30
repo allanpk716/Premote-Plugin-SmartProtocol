@@ -38,7 +38,7 @@ if you have a server, it can be connected by 2 ways：
 | 127.0.0.1:53391     | FRP to local host | RDP      |
 | 192.168.50.188:3389 | LAN               | RDP      |
 
-1. Download PRemote Test Version，uzip to your localtion；
+1. Download [PRemote Test Version - branch - dev_SmartProtocol](https://github.com/allanpk716/PRemoteM/tree/dev_SmartProtocol)，at this time, you need build by yourself. (later....  after talk with the author , you can download zip. uzip to your localtion)；
 
 2. download this plug-in, from  [Release](https://github.com/allanpk716/Premote-Plugin-SmartProtocol/releases) , Premote-Plugin-SmartProtocol.zip ( also you can build it all by yourself )；
 
