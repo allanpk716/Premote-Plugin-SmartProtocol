@@ -43,8 +43,11 @@ func checkOne(check func(host string, port string) error, sp *SmartProtocol) (st
 			}
 		}
 	}
-	// 找到有效的，且低延迟的
-	sort.Sort(sort.Reverse(AddressInfoSlice(sp.MultiAddressInfo)))
+	if sp.UseCommonPortCheck == false {
+		// 找到有效的，且低延迟的
+		sort.Sort(sort.Reverse(AddressInfoSlice(sp.MultiAddressInfo)))
+	}
+	// 那么就是跟排序有关了，跟低延迟无关
 	for i, info := range sp.MultiAddressInfo {
 		if info.Worked == true {
 			return sp.MultiAddressInfo[i].IP + ":" +sp.MultiAddressInfo[i].Port, nil
