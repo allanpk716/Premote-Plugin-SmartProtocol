@@ -33,10 +33,10 @@ so [Premote-Plugin-SmartProtocol](https://github.com/allanpk716/Premote-Plugin-S
 
 if you have a server, it can be connected by 2 ways：
 
-| IP:Port             | Connection Type | Protocol |
-| ------------------- | --------------- | -------- |
-| 127.0.0.1:53391     | FRP，映射到本地 | RDP      |
-| 192.168.50.188:3389 | 局域网内直连    | RDP      |
+| IP:Port             | Connection Type   | Protocol |
+| ------------------- | ----------------- | -------- |
+| 127.0.0.1:53391     | FRP to local host | RDP      |
+| 192.168.50.188:3389 | LAN               | RDP      |
 
 1. Download PRemote Test Version，uzip to your localtion；
 
