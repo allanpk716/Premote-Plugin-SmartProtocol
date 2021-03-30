@@ -29,6 +29,8 @@
 
 ## How To Use
 
+### 配合 PRemote 使用
+
 这里将举例如何配置使用，请举一反三。
 
 假设现在有一台服务器，可以有两种方法连接：
@@ -73,6 +75,20 @@
    这里最重要的是**地址**，务必是 **SP://** 开头，然后 **Code** 与上面 SPConfig.yaml 的 Code 一致。不区分大小写。当然用户名，密码，你还是得写正确的。端口并不是很重要。
 
 6. 然后就正常用 PRemote 去调用 **Code_SP** 这个服务吧，它可以自动选择最佳的路径了，你的 PRemote 里面也就只有一个服务了，不是多个哦；
+
+### 控制台中测试
+
+Input
+
+```powershell
+.\Premote-Plugin-SmartProtocol.exe RDP SP://Code
+```
+
+Output
+
+```powershell
+IP:Port
+```
 
 ## How To Work
 

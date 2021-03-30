@@ -31,6 +31,8 @@ so [Premote-Plugin-SmartProtocol](https://github.com/allanpk716/Premote-Plugin-S
 
 ## How To Use
 
+### Work with PRemote
+
 if you have a server, it can be connected by 2 ways：
 
 | IP:Port             | Connection Type   | Protocol |
@@ -72,6 +74,20 @@ if you have a server, it can be connected by 2 ways：
    The important thing is **Address**，must be **SP://** , so fill your user name and password .
 
 6. So you can call  **Code_SP**  by PRemote ；
+
+### Work in CMD
+
+Input
+
+```powershell
+.\Premote-Plugin-SmartProtocol.exe RDP SP://Code
+```
+
+Output
+
+```powershell
+IP:Port
+```
 
 ## How To Work
 
