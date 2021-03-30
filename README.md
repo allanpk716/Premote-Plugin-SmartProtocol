@@ -101,6 +101,10 @@ PRemote will send the address( **SP://**  ) to PPSP(Premote-Plugin-SmartProtocol
 go build
 ```
 
+## Upate
+
+* v0.2.0 -- A new setup interface **UseCommonportCheck** allows you to use the usual port detection scheme to determine if it is valid. Because the specific protocol is not detected, if there is a local proxy port, the feedback will be faster than the LAN. It is recommended that you manually enable temporary use when the tool detects a problem with some version of some protocol. Not recommended opening (set **true**) by default.
+
 ## TODO
 
 Improve usability with [PRemote](https://github.com/VShawn/PRemoteM) .

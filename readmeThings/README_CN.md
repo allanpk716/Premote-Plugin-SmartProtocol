@@ -53,13 +53,14 @@
      Code:
        ProtocolName: RDP
        TimeOut: 1000 # ms
+       UseCommonPortCheck: false
        MultiAddress:
          - 127.0.0.1:53391
          - 192.168.50.188:3389
-   ```
-
-    ProtocolName 可以填写以下几种协议，注意区分大小写:
-
+```
+   
+ ProtocolName 可以填写以下几种协议，注意区分大小写:
+   
     * RDP
     * FTP
     * SFTP
@@ -101,6 +102,10 @@ IP:Port
 ```bash
 go build
 ```
+
+## Upate
+
+* v0.2.0 -- 新增一个设置接口 **UseCommonPortCheck** ，允许使用常规的端口检测方案去判断是否有效。因为不检测具体的协议，所以如果有本地的代理端口，那么会比局域网的反馈更快。建议是在本工具检测某个协议的某个版本有问题的时候，手动开启临时使用。不建议长期开启。
 
 ## TODO
 
