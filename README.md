@@ -4,7 +4,7 @@
 >
 > It won't get your password!
 
-[[中文]](https://github.com/allanpk716/Premote-Plugin-SmartProtocol/readmeThings/README_CN.md)
+[[中文]](readmeThings/README_CN.md)
 
 This is a plug-in use by [PRemote](https://github.com/VShawn/PRemoteM) . It will be adjusted according to the use.
 
