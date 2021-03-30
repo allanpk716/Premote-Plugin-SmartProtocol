@@ -56,6 +56,16 @@
          - 192.168.50.188:3389
    ```
 
+    ProtocolName 可以填写以下几种协议，注意区分大小写:
+
+    * RDP
+    * FTP
+    * SFTP
+    * SSH
+    * VNC
+    * Telnet
+
+
 5. 然后去 [PRemote](https://github.com/VShawn/PRemoteM) 中新建一个 RDP 的配置，如下图：
 
    ![02](pics/02.png)

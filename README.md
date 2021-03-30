@@ -56,6 +56,15 @@ if you have a server, it can be connected by 2 ways：
          - 192.168.50.188:3389
    ```
 
+    ProtocolName can be ( Case matters ):
+
+    * RDP
+    * FTP
+    * SFTP
+    * SSH
+    * VNC
+    * Telnet
+
 5. create a server connection item in [PRemote](https://github.com/VShawn/PRemoteM) , like：
 
    ![02](readmeThings/pics/02.png)
