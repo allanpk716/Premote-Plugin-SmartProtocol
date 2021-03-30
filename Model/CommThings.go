@@ -9,6 +9,7 @@ const (
 	MultiAddressName = ".MultiAddress"
 	ProtocolName = ".ProtocolName"
 	TimeOutName = ".TimeOut"
+	UseCommonPortCheckName = ".UseCommonPortCheck"
 
 	TimeOutDefault = 1000
 

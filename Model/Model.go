@@ -56,6 +56,15 @@ func checkOne(check func(host string, port string) error, sp *SmartProtocol) (st
 func CheckAll(detect *gpd.Detector, sp SmartProtocol) (string, error) {
 	var err error
 	outAddressAndPort := ""
+	// use common port check func
+	if sp.UseCommonPortCheck == true {
+		outAddressAndPort, err = checkOne(detect.CommonPortCheck, &sp)
+		if err != nil {
+			return "", err
+		}
+		return outAddressAndPort, nil
+	}
+
 	switch sp.ProtocolName {
 	case ProtocolNameRDP:
 		outAddressAndPort, err = checkOne(detect.RDPCheck, &sp)

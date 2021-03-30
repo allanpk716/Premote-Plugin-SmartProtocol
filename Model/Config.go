@@ -10,6 +10,7 @@ import (
 type SmartProtocol struct {
 	ProtocolName 		string
 	TimeOut				int
+	UseCommonPortCheck	bool
 	MultiAddressInfo	[]AddressInfo
 }
 
@@ -56,6 +57,7 @@ func InitConfigure() (map[string]SmartProtocol, error) {
 		oneSP := SmartProtocol{}
 		oneSP.ProtocolName = strings.ToUpper(config.GetString(SPConfigsName + spName + ProtocolName))
 		oneSP.TimeOut = config.GetInt(SPConfigsName + spName + TimeOutName)
+		oneSP.UseCommonPortCheck = config.GetBool(SPConfigsName + spName + UseCommonPortCheckName)
 		adds := config.GetStringSlice(SPConfigsName + spName + MultiAddressName)
 		for _, onAddress := range adds{
 			tmp := strings.Split(onAddress, ":")
