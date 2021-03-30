@@ -1,6 +1,6 @@
 # PRemote Plugin SmartProtocol
 
-> 注意，想要使用本插件，需要 [PRemote](https://github.com/VShawn/PRemoteM) 更新到 **内部测试版本**，因为进行了硬编码，加入了对应的逻辑流程。插件的实现机制还在与作者讨论。
+> 注意，想要使用本插件，需要 [PRemote](https://github.com/VShawn/PRemoteM) 更新到 [**内部测试版本**](https://github.com/allanpk716/PRemoteM/releases/tag/0.5.10-sp)，因为进行了硬编码，加入了对应的逻辑流程。
 >
 > 本插件并不会获取你的密码！只是地址的检测和转换！
 
@@ -40,7 +40,7 @@
 | 127.0.0.1:53391     | FRP，映射到本地 | RDP  |
 | 192.168.50.188:3389 | 局域网内直连    | RDP  |
 
-1. 下载测试版本的 [PRemote -- branch -- dev_SmartProtocol](https://github.com/allanpk716/PRemoteM/tree/dev_SmartProtocol) ，注意是单独的分支，需要自己编译。（后续跟作者联系后，会输出对应的测试版本。）解压后放到你想放置的位置；
+1. 下载 [PRemote -- branch -- dev_SmartProtocol](https://github.com/allanpk716/PRemoteM/releases/tag/0.5.10-sp) ，这个 Realse.zip 是单独编译的，解压后放到你想放置的位置；
 
 2. 请到 [Release](https://github.com/allanpk716/Premote-Plugin-SmartProtocol/releases) 下载最新的 Premote-Plugin-SmartProtocol.zip 文件（也可以自己编译）；
 
@@ -111,5 +111,7 @@ go build
 
 方案成熟后，会提高与 [PRemote](https://github.com/VShawn/PRemoteM) 配合使用的易用性。
 
+
+```
 
 ```
